@@ -1,0 +1,53 @@
+body
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+#form
+{
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: dodgerblue;
+    background-color: lightskyblue;
+    padding-bottom: 15px;
+}
+
+#result, #loading
+{
+    padding-top: 20px;
+}
+
+#stats
+{
+    padding-left: 10px;
+    float: right;
+    margin-right: 10px;
+    border-left: thin solid darkgray;
+}
+
+.icone_champ
+{
+    float: left;
+    width: 48px;
+    height: 48px;
+}
+
+.well
+{
+    height: 90px;
+    width: 63%;
+}
+
+.champ_data
+{
+    padding-left: 60px;
+}
+
+.social
+{
+    width: 50px;
+    height: 50px;
+}

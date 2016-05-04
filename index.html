@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What's ur champion pull ?</title>
+</head>
+<body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my_part.js"></script>
+    <div id="form" class="form-inline jumbotron">
+        <h1>Who is the summoner you are searching for ?</h1>
+        <p>Find the true definition of a One Trick Poney !</p>
+        <div class="form-group">
+            <input class="form-control" type="text" id="summoner_name" placeholder="Summoner name"/>
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="region">
+                <option value="euw">EUW</option>
+                <option value="na">NA</option>
+                <option value="br">BR</option>
+                <option value="eune">EUNE</option>
+                <option value="jp">JP</option>
+                <option value="kr">KR</option>
+                <option value="lan">LAN</option>
+                <option value="las">las</option>
+                <option value="oce">oce</option>
+                <option value="ru">RU</option>
+                <option value="tr">TR</option>
+            </select>
+        </div>
+        <button id="go" class="btn btn-primary">Tell me everything !</button>
+    </div>
+    <div id="loading">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">
+            </div>
+        </div>
+    </div>
+    <div id="error" class="alert alert-danger" role="alert">...</div>
+    <div id="result">
+        <div id="stats">
+            <h3>Share</h3>
+            <a target="_blank" id="twitter_button_share" title="Share with Twitter" href="">
+                <img src="images/instantlogosearch-twitter.png" alt="Share with Twitter" class="social"/>
+            </a>
+            <a target="_blank" id="fb_button_share" title="Share with Facebook" href="">
+                <img src="images/instantlogosearch-facebook.png" alt="Share with Facebook" class="social"/>
+            </a>
+            <h3>About everything</h3>
+            <div id="in_stats"></div>
+        </div>
+        <div id="champions">
+            <h3>About champions</h3>
+            <div id="in_champ"></div>
+        </div>
+    </div>
+</body>
+</html>
